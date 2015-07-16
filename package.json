@@ -1,0 +1,27 @@
+{
+  "name": "depmake",
+  "version": "0.0.1",
+  "description": "depmake is a collection of bash functions and conventions for creating applications that can bundle all their code and dependencies inside a tar file. The tar can be used to extract and run your app on any system (of the same kernel / architecture).",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvz/depmake.git"
+  },
+  "keywords": [
+    "deployment",
+    "Makefile",
+    "lightweight",
+    "puppet",
+    "chef",
+    "apt"
+  ],
+  "author": "Felix Geisendörfer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvz/depmake/issues"
+  },
+  "homepage": "https://github.com/kvz/depmake#readme"
+}
