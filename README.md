@@ -1,5 +1,3 @@
-# WORK IN PROGRESS: There is nothing useful for you here until this warning is removed.
-
 # depmake
 
 depmake is a collection of bash functions and conventions for creating
@@ -27,7 +25,7 @@ create simple deployment systems at the cost of more initial work.
 A typical depmake project allows you to check out a fresh copy of your project,
 then:
 
-```
+```bash
 cd my-project
 source my-config.sh
 cd deps && make
@@ -53,7 +51,5 @@ This makes sure that in addition to the usual paths your systems looks
 for binaries, shared libraries, etc., it will also consider the stuff insided
 of the `stack` folder.
 
-So effictively this creates a virtual environment that is activated by sourcing
+So effectively this creates a virtual environment that is activated by sourcing
 a bash file, and de-activated by starting a new shell session.
-
-
