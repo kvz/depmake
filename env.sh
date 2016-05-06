@@ -9,7 +9,7 @@ export DM_BUILD_DIR="${DM_DEPS_DIR}/build"
 # The directory where the stack will be linked into
 export DM_STACK_DIR="${DM_ROOT_DIR}/stack"
 # The number of cpu cores on this machine
-export DM_CPU_CORES=`nproc`
+export DM_CPU_CORES=`getconf _NPROCESSORS_ONLN`
 
 # The $PATH before it was manipulated by depmake
 export DM_ORIGINAL_PATH=${DM_ORIGINAL_PATH:-$PATH}
