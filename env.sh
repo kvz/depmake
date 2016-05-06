@@ -16,6 +16,7 @@ export DM_ORIGINAL_PATH=${DM_ORIGINAL_PATH:-$PATH}
 # Add our stack/bin dir to the $PATH
 export PATH="${DM_STACK_DIR}/bin:${DM_STACK_DIR}/sbin:${DM_ORIGINAL_PATH}"
 # Set other paths that impact builds and shared library loading
+export LD_INCLUDE_PATH="${DM_STACK_DIR}/include"
 export LD_LIBRARY_PATH="${DM_STACK_DIR}/lib"
 export CPPFLAGS="-I${DM_STACK_DIR}/include"
 export LDFLAGS="-L${DM_STACK_DIR}/lib"
