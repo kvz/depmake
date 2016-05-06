@@ -1,19 +1,19 @@
 SHELL     := /usr/bin/env bash
 
 .PHONY: release-major
-release-major: build test
+release-major:
 	@npm version major -m "Release %s"
-	@git push
+	@git push && git push --tags
 	@npm publish
 
 .PHONY: release-minor
-release-minor: build test
+release-minor:
 	@npm version minor -m "Release %s"
-	@git push
+	@git push && git push --tags
 	@npm publish
 
 .PHONY: release-patch
-release-patch: build test
+release-patch:
 	@npm version patch -m "Release %s"
-	@git push
+	@git push && git push --tags
 	@npm publish
