@@ -1,3 +1,8 @@
+if [[ "${OSTYPE}" = "darwin"* ]]; then
+  echo "--> Depmake environment on OSX is not supported. Skipping. "
+  return
+fi
+
 # The directory depmake is installed in
 export DM_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # The parent directory, which should have a 'packets' and 'build' dir, private
