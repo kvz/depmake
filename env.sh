@@ -2,6 +2,8 @@
 export DM_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # The parent directory, which should have a 'packets' and 'build' dir, private
 DM_DEPS_DIR="$( dirname ${DM_DIR} )"
+# The root directory, which should have a 'stack' dir. Allows external overrides
+export DM_ROOT_DIR="${DM_ROOT_DIR:-$( dirname ${DM_DEPS_DIR} )}"
 # The directory containing the packet install bash scripts
 export DM_PACKETS_DIR="${DM_DEPS_DIR}/packets"
 # The directory where we build / install our packets
